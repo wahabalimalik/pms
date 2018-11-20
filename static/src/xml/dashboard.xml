@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="PMC_DashboardsMain">
+        <div class="container-fluid o_ptc_dashboard">
+            <div class="row">
+                <div class="o_map_view">
+                    <div id="mapid"></div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

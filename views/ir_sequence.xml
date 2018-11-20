@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.actions.act_window" id="property_management_system.action_sequence">
+      <field name="name">Sequences</field>
+      <field name="res_model">ir.sequence</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.sequence" 
+      name="Sequences" 
+      parent="property_management_system.menu_setting"
+      action="property_management_system.action_sequence"
+      sequence='1'
+    />
+  </data>
+</odoo>

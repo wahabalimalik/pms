@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="property_management_system.mem_file_detail_form" model="ir.ui.view">
+      <field name="name">property_management_system mem_file_detail_form</field>
+      <field name="model">member.file.detail</field>
+      <field name="arch" type="xml">
+        <form string="Members File Registration">
+          <sheet>
+            <group>
+              <group string = "File Detail">
+                <field name="file_number"/>
+                <field name="society"/>
+                <field name="phase"/>
+                <field name="booking_date"/>
+                <field name="payment_type"/>
+                <field name="unit_type"/>
+                <field name="completion_year"/>
+                <field name="current_status"/>
+              </group>
+              <group string = "Plot Detail">
+                <field name="sector"/>
+                <field name="plot_number"/>
+                <field name="plot_category"/>
+                <field name="coverd_area"/>
+                <field name="construction_strat_date"/>
+                <field name="completion_date"/>
+              </group>
+            </group>
+            <group string = "Membership">
+              <group>
+                <field name="membership_number"/>
+              </group>
+              <group>
+                <field name="partner_id"/>
+              </group>
+              <group>
+                <field name="ref_person"/>
+              </group>
+            </group>
+            <notebook colspan="4">
+              <page string="Payment Plan" autofocus="autofocus">
+                <field name="plan_id"/>
+              </page>
+              <page string="Payment Detail">
+                <field name="payment_id"/>
+              </page>
+              <page string="Cancellation Detail">
+                <field name="cancellation_id"/>
+              </page>
+              <page string="File History">
+                <field name="history_id"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record 
+      model="ir.actions.act_window" 
+      id="property_management_system.action_mem_file_detail">
+
+      <field name="name">Members File Registration</field>
+      <field name="res_model">member.file.detail</field>
+      <!-- <field name="context">{'default_is_member':1}</field> -->
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.mem_file_detail" 
+      name="Members File Registration" 
+      parent="property_management_system.menu_fms"
+      action="property_management_system.action_mem_file_detail"
+      sequence='1'
+    />
+  </data>
+</odoo>

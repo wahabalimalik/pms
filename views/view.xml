@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+  	<record model="ir.actions.act_window" id="property_management_system.action_land_registory">
+      <field name="name">Land Registory</field>
+      <field name="res_model">land.registory</field>
+      <!-- <field name="view_id" ref="property_management_system.view_partner_form"/> -->
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.land_registory" 
+      name="Land Registory" 
+      parent="property_management_system.menu_detail"
+      action="property_management_system.action_land_registory"
+      sequence='10'
+    />
+
+    <record model="ir.actions.act_window" id="property_management_system.action_reference_person">
+      <field name="name">Reference Person</field>
+      <field name="res_model">reference.person</field>
+      <!-- <field name="view_id" ref="property_management_system.view_partner_form"/> -->
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.reference_person" 
+      name="Reference Person" 
+      parent="property_management_system.menu_detail"
+      action="property_management_system.action_reference_person"
+      sequence='10'
+    />
+
+    <record model="ir.actions.act_window" id="property_management_system.action_plot_inventory">
+      <field name="name">Inventory</field>
+      <field name="res_model">plot.inventory</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.plot_inventory" 
+      name="Plot Inventory" 
+      parent="property_management_system.menu_detail"
+      action="property_management_system.action_plot_inventory"
+      sequence='10'
+    />
+
+    <record model="ir.actions.act_window" id="property_management_system.action_payment_plan">
+      <field name="name">Payment Plan</field>
+      <field name="res_model">payment.plan</field>
+      <!-- <field name="view_id" ref="property_management_system.view_partner_form"/> -->
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.payment_plan" 
+      name="Payment Plan" 
+      parent="property_management_system.menu_detail"
+      action="property_management_system.action_payment_plan"
+      sequence='10'
+    />
+
+
+    <record model="ir.actions.act_window" id="property_management_system.action_transaction_type">
+      <field name="name">Transaction Type</field>
+      <field name="res_model">transaction.type</field>
+      <!-- <field name="view_id" ref="property_management_system.view_partner_form"/> -->
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.transaction_type" 
+      name="Transaction Type" 
+      parent="property_management_system.menu_detail"
+      action="property_management_system.action_transaction_type"
+      sequence='10'
+    />
+
+    <record model="ir.actions.act_window" id="property_management_system.action_rate_list">
+      <field name="name">Rate List</field>
+      <field name="res_model">rate.list</field>
+      <!-- <field name="view_id" ref="property_management_system.view_partner_form"/> -->
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.rate_list" 
+      name="Rate List" 
+      parent="property_management_system.menu_detail"
+      action="property_management_system.action_rate_list"
+      sequence='10'
+    />
+
+    <record model="ir.actions.act_window" id="property_management_system.action_customized_letter">
+      <field name="name">Customized Letter</field>
+      <field name="res_model">customized.letter</field>
+      <!-- <field name="view_id" ref="property_management_system.view_partner_form"/> -->
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.customized_letter" 
+      name="Customized Letter" 
+      parent="property_management_system.menu_detail"
+      action="property_management_system.action_customized_letter"
+      sequence='10'
+    />
+  </data>
+</odoo>

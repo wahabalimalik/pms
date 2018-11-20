@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <!-- Main Menuitem -->
+    <menuitem 
+      name="Property" 
+      id="property_management_system.menu_root"
+      web_icon="property_management_system,static/description/icon.png"
+      sequence='1'
+    />
+
+  <!-- Sub-Menu Menuitem -->
+    <menuitem 
+      name="Society" 
+      id="property_management_system.menu_society"
+      parent="property_management_system.menu_root"
+      sequence='1'
+    />
+
+    <menuitem 
+      name="File Management System" 
+      id="property_management_system.menu_fms"
+      parent="property_management_system.menu_root"
+      sequence='2'
+    />
+
+    <menuitem 
+      name="Detail" 
+      id="property_management_system.menu_detail"
+      parent="property_management_system.menu_root"
+      sequence='3'
+    />
+
+    <menuitem 
+      name="Setting" 
+      id="property_management_system.menu_setting"
+      parent="property_management_system.menu_root"
+      sequence='3'
+    />
+    
+</odoo>

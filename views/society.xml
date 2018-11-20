@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.actions.act_window" id="property_management_system.action_society">
+      <field name="name">Societies</field>
+      <field name="res_model">society</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="property_management_system.action_society_phase">
+      <field name="name">Phase</field>
+      <field name="res_model">society</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+      id="property_management_system.society" 
+      name="Societies" 
+      parent="property_management_system.menu_society"
+      action="property_management_system.action_society"
+      sequence='10'
+    />
+
+    <menuitem 
+      id="property_management_system.society_phase" 
+      name="Phase" 
+      parent="property_management_system.society"
+      action="property_management_system.action_society_phase"
+      sequence='10'
+    />
+  </data>
+</odoo>

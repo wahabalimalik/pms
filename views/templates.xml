@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Template -->
+        <template 
+            id="assets_backend" 
+            name="pms_dashboard" 
+            inherit_id="web.assets_backend">
+
+            <xpath expr="." position="inside">
+              <link 
+                rel="stylesheet" 
+                href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" 
+                integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" 
+                crossorigin=""
+              />
+              <script 
+                src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" 
+                integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" 
+                crossorigin="">
+              </script>
+
+              <link 
+                href="/property_management_system/static/src/css/ptc_dashboard.css" 
+                rel="stylesheet" 
+                type="text/css"
+              />
+              
+              <script 
+                type="text/javascript" 
+                src="/property_management_system/static/src/js/dashboard.js"
+              />
+            </xpath>
+         </template>
+
+         
+    <!-- Action -->
+      <record 
+          model="ir.actions.client" 
+          id="property_management_system.action_dashboard">
+
+          <field name="name">Dashboard</field>
+          <field name="tag">property_management_system.dashboard</field>
+      </record>
+
+    <!-- Menuitem -->
+      <menuitem 
+        name="Dashboard" 
+        id="property_management_system.dashboard" 
+        parent="property_management_system.menu_root"
+        sequence = "-1"
+        action="property_management_system.action_dashboard"
+      />
+</odoo>
