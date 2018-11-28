@@ -56,7 +56,6 @@ class MembersFileDetail(models.Model):
 
         return rec
 
-
 class PaymentDetail(models.Model):
     _name = 'payment.detail'
 

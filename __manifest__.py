@@ -20,6 +20,7 @@
     'data': [
         'data/ir_sequence_data.xml',
         'views/menuitems.xml',
+        'views/views.xml',
         'views/templates.xml',
         'views/society.xml',
         'views/fms.xml',

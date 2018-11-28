@@ -19,7 +19,7 @@ class Society(models.Model):
     total_land_for_sale = fields.Float()
     total_land_sold = fields.Float()
     total_land_avilable = fields.Float()
-    user_id = fields.Many2many('res.user')
+    user_id = fields.Many2many('res.users')
 
 class SocietyMap(models.Model):
     _name = 'society.map'
